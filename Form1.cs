@@ -253,7 +253,7 @@ namespace OffsetsHalo
             readTagHeader(fileStream);
 
             fileStream = openFileDialog1.OpenFile();
-            readTags(fileStream);
+            //readTags(fileStream);
         }
     }
 }

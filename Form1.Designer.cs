@@ -29,45 +29,45 @@ namespace OffsetsHalo
         /// </summary>
         private void InitializeComponent()
         {
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.button1 = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.SuspendLayout();
-            // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            button1 = new System.Windows.Forms.Button();
+            richTextBox1 = new System.Windows.Forms.RichTextBox();
+            SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(60, 268);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(115, 30);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Abrir mapa (.map)";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.read);
+            button1.Location = new System.Drawing.Point(60, 268);
+            button1.Name = "button1";
+            button1.Size = new System.Drawing.Size(115, 30);
+            button1.TabIndex = 1;
+            button1.Text = "Abrir mapa (.map)";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += read;
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(12, 12);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(211, 250);
-            this.richTextBox1.TabIndex = 2;
-            this.richTextBox1.Text = "Esperando mapa...";
+            richTextBox1.Location = new System.Drawing.Point(12, 12);
+            richTextBox1.Name = "richTextBox1";
+            richTextBox1.ReadOnly = true;
+            richTextBox1.Size = new System.Drawing.Size(211, 250);
+            richTextBox1.TabIndex = 2;
+            richTextBox1.Text = "Esperando mapa...";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(235, 310);
-            this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.button1);
-            this.Name = "Form1";
-            this.Text = "Map Details";
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(235, 310);
+            Controls.Add(richTextBox1);
+            Controls.Add(button1);
+            FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
+            Name = "Form1";
+            Text = "Map Details";
+            TopMost = true;
+            ResumeLayout(false);
         }
 
         #endregion
